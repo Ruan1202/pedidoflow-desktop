@@ -1,0 +1,35 @@
+# Ambiente virtual
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Build
+build/
+dist/
+*.spec
+
+# Banco de dados
+*.db
+*.sqlite3
+
+# Dados locais
+data/
+backups/
+
+# VS Code
+.vscode/
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Executáveis
+*.exe
+
+# Configurações locais
+config/tema.json
