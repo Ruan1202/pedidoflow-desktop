@@ -1,0 +1,17 @@
+====== PEDIDO #9 ======
+Cliente: Ruan
+Telefone: 123456789
+Endereço: Rua 1
+Bairro: Longe
+Pagamento: PIX
+
+Pizza Meio a Meio x1 = R$ 35.99
+1/2 cala
+1/2 Frango
++ cheddar R$ 10.00
+
+---------------------
+Subtotal: R$ 35.99
+Entrega: R$ 0.00
+TOTAL: R$ 35.99
+=====================

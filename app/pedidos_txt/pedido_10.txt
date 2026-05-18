@@ -1,0 +1,15 @@
+====== PEDIDO #10 ======
+Cliente: Ruan
+Telefone: 123456789
+Endereço: Rua 1
+Bairro: Longe
+Pagamento: Débito
+
+cala x2 = R$ 51.98
++ cheddar R$ 10.00
+
+---------------------
+Subtotal: R$ 51.98
+Entrega: R$ 0.00
+TOTAL: R$ 51.98
+=====================

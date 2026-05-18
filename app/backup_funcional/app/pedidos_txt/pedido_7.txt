@@ -1,0 +1,14 @@
+====== PEDIDO #7 ======
+Cliente: Ruan
+Telefone: 123456789
+Bairro: Longe
+
+Frango x3 = R$ 77.97
+
+Obs: Sem cebola
+
+---------------------
+Subtotal: R$ 77.97
+Entrega: R$ 15.00
+TOTAL: R$ 92.97
+=====================

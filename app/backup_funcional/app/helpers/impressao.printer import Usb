@@ -1,0 +1,63 @@
+from escpos.printer import Usb
+from datetime import datetime
+
+
+# =========================
+# FORMATAR TEXTO
+# =========================
+def linha():
+    return "-" * 32
+
+
+def centralizar(texto):
+    return texto.center(32)
+
+
+def formatar_cupom(texto_pedido):
+
+    linhas = texto_pedido.split("\n")
+
+    resultado = []
+
+    resultado.append(centralizar("PEDIDO"))
+    resultado.append(linha())
+
+    for linha_texto in linhas:
+        resultado.append(linha_texto)
+
+    resultado.append(linha())
+    resultado.append(
+        centralizar(
+            datetime.now().strftime("%d/%m/%Y %H:%M")
+        )
+    )
+
+    return "\n".join(resultado)
+
+
+# =========================
+# IMPRESSÃO USB
+# =========================
+def imprimir_usb(
+    texto,
+    vendor_id,
+    product_id
+):
+
+    try:
+
+        impressora = Usb(
+            vendor_id,
+            product_id
+        )
+
+        cupom = formatar_cupom(texto)
+
+        impressora.text(cupom)
+        impressora.cut()
+
+        return True, "Impressão enviada."
+
+    except Exception as erro:
+
+        return False, str(erro)

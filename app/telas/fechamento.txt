@@ -1,0 +1,17 @@
+from services import fechamento_do_dia
+import customtkinter as ctk
+
+
+def tela_fechamento(area_conteudo):
+    for widget in area_conteudo.winfo_children():
+        widget.destroy()
+
+    dados = fechamento_do_dia()
+
+    ctk.CTkLabel(area_conteudo, text="Fechamento do Dia", font=("Arial", 24)).pack(pady=20)
+
+    ctk.CTkLabel(area_conteudo, text=f"Total vendido: R$ {dados['total_vendido']:.2f}").pack(pady=5)
+    ctk.CTkLabel(area_conteudo, text=f"Pedidos: {dados['total_pedidos']}").pack(pady=5)
+    ctk.CTkLabel(area_conteudo, text=f"Entrega: R$ {dados['total_entrega']:.2f}").pack(pady=5)
+    ctk.CTkLabel(area_conteudo, text=f"Cancelados: {dados['cancelados']}").pack(pady=5)
+    ctk.CTkLabel(area_conteudo, text=f"Mais vendido: {dados['mais_vendido']}").pack(pady=5)
