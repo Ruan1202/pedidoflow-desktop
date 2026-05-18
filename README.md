@@ -134,3 +134,33 @@ Preparado para:
 - impressão real
 - deploy portátil
 - possível migração web futuramente
+
+# 📸 Screenshots
+
+## Login
+
+![Login](screenshots/login.png)
+
+---
+
+## Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
+---
+
+## Pedidos
+
+![Pedidos](screenshots/pedidos.png)
+
+---
+
+## Usuários
+
+![Usuarios](screenshots/usuarios.png)
+
+---
+
+## Configurações
+
+![Configuracoes](screenshots/configuracoes.png)
