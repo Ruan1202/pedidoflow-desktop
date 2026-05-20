@@ -1,5 +1,13 @@
+
 # CRM Atendimento
 
+<p align="center">
+  <img src="screenshots/logo.png" width="500">
+</p>
+
+# PedidoFlow
+
+Sistema desktop de gestão para delivery com autenticação segura, dashboard financeiro, pedidos, usuários e backup local.
 Sistema desktop para gerenciamento de atendimento e pedidos.
 
 ---
